@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.arhs.team1100.aerialassist.scouting.objects">
+    <class name="TeamEventMatch" table="teameventmatch">
+        <composite-id>
+            <key-property name="teamNumber" column="teamNumber"/>
+            <key-property name="matchNumber" column="matchNumber"/>
+            <key-property name="eventID" column="eventID"/>
+        </composite-id>
+        
+        <property name="assists"/>
+        <property name="ballShielding"/>
+        <property name="ballsCaughtFromHP"/>
+        <property name="comments"/>
+        <property name="cycles"/>
+        <property name="defensive"/>
+        <property name="highGoalsMissed"/>
+        <property name="highGoalsScored"/>
+        <property name="lowGoalsMissed"/>
+        <property name="lowGoalsScored"/>
+        <property name="scouter"/>
+        <property name="stability"/>
+        <property name="startingPosition"/>
+        <property name="ableToTrussCatch"/>
+        <property name="ableToTrussToss"/>
+        <property name="ableToUnloadAutoBall"/>
+        <property name="zoneChange"/>
+        <property name="autoBallCount"/>
+        <property name="autoBallGoal"/>
+        <property name="floorPickup"/>
+        <property name="missedCatchesFromHP"/>
+        <property name="ableToCatch"/>
+
+
+    </class>
+    
+    
+</hibernate-mapping>
